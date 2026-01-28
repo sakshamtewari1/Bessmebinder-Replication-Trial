@@ -1,5 +1,6 @@
-Bessembinder 2018: Replication of Do Stocks Outperform Treasury Bills?
-Key Findings
+#Bessembinder 2018: Replication of Do Stocks Outperform Treasury Bills?
+
+##Key Findings
 - Sample: 48 large-cap Indian stocks from major indices
 - Time Period: 2000-2025 (25 years)
 - Result:94% of stocks outperformed T-bills**
@@ -13,7 +14,6 @@ The primary driver of our different result:
   - Thousands of delisted, bankrupt, and penny stocks
 
 ## Project Structure
-## 📂 Project Structure
 ```
 bessembinder-replication/
 │
