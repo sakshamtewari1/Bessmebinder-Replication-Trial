@@ -13,16 +13,22 @@ The primary driver of our different result:
   - Thousands of delisted, bankrupt, and penny stocks
 
 ## Project Structure
-
+## 📂 Project Structure
+```
+bessembinder-replication/
+│
 ├── src/
 │   ├── fetch_nifty500.py          # Fetches stock list from Wikipedia/CSV
 │   ├── fetch_historical_data.py   # Downloads historical price data via yfinance
 │   └── calculate_returns.py       # Calculates buy-and-hold returns & T-bill comparison
+│
 ├── data/
 │   ├── nifty500_constituents.csv  # List of 50 stocks analyzed
 │   ├── returns_summary.csv        # Complete results with returns & comparisons
 │   └── stocks/                    # Individual stock price CSVs (not in repo)
+│
 └── ssrn_id3186246_code667.pdf    # Original Bessembinder (2018) paper
+```
 
 ## How To Run
 
@@ -47,7 +53,7 @@ Output saved to `data/returns_summary.csv` with columns:
 - `Stock_Return_Pct`, `Tbill_Return_Pct`
 - `Excess_Return_Pct`, `Beat_Tbills` (True/False)
 
-## 📊 Methodology
+## Methodology
 
 ### Buy-and-Hold Returns
 ```
@@ -67,7 +73,7 @@ Sample consists of 48 major Indian stocks from Nifty indices, including:
 - Large-cap companies across sectors
 - Only currently listed stocks (survivorship bias inherent)
 
-## ⚠️ Limitations & Caveats
+## Limitations & Caveats
 
 1. **Survivorship Bias (Critical)**
    - Sample includes only current index constituents
